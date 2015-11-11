@@ -1,5 +1,6 @@
 package com.example.gregfunk.androidbasicphrases;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -10,8 +11,12 @@ import android.util.Log;
 public class MainActivity extends ActionBarActivity {
 
     public void buttonTapped(View view) {
-        String ourId = view.getResources().getResourceEntryName(view.getId());
-        Log.i("button id", ourId);
+        String buttonId = view.getResources().getResourceEntryName(view.getId());
+        Log.i("button id", buttonId);
+
+        int soundId = getResources().getIdentifier(buttonId, "raw", "com.example.gregfunk.androidbasicphrases");
+        MediaPlayer mplayer = MediaPlayer.create(this, soundId);
+        mplayer.start();
     }
 
     @Override

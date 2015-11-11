@@ -69,6 +69,7 @@
             android:layout_rowWeight="1"
             android:layout_gravity="fill"
             android:text="My name is..."
+            android:onClick="buttonTapped"
             android:id="@+id/mynameis" />
 
         <Button
@@ -105,6 +106,6 @@
             android:layout_gravity="fill"
             android:text="I live in..."
             android:onClick="buttonTapped"
-            android:id="@+id/ilovein" />
+            android:id="@+id/ilivein" />
     </GridLayout>
 </RelativeLayout>
