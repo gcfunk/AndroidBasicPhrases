@@ -21,6 +21,7 @@
             android:layout_rowWeight="1"
             android:layout_gravity="fill"
             android:text="Hello"
+            android:onClick="buttonTapped"
             android:id="@+id/hello" />
 
         <Button
@@ -32,6 +33,7 @@
             android:layout_rowWeight="1"
             android:layout_gravity="fill"
             android:text="How are you?"
+            android:onClick="buttonTapped"
             android:id="@+id/howareyou" />
 
         <Button
@@ -43,6 +45,7 @@
             android:layout_rowWeight="1"
             android:layout_gravity="fill"
             android:text="Good Evening"
+            android:onClick="buttonTapped"
             android:id="@+id/goodevening" />
 
         <Button
@@ -54,6 +57,7 @@
             android:layout_rowWeight="1"
             android:layout_gravity="fill"
             android:text="Please"
+            android:onClick="buttonTapped"
             android:id="@+id/please" />
 
         <Button
@@ -76,6 +80,7 @@
             android:layout_rowWeight="1"
             android:layout_gravity="fill"
             android:text="Do you speak\nEnglish?"
+            android:onClick="buttonTapped"
             android:id="@+id/doyouspeakenglish" />
 
         <Button
@@ -87,6 +92,7 @@
             android:layout_rowWeight="1"
             android:layout_gravity="fill"
             android:text="Welcome"
+            android:onClick="buttonTapped"
             android:id="@+id/welcome" />
 
         <Button
@@ -98,6 +104,7 @@
             android:layout_rowWeight="1"
             android:layout_gravity="fill"
             android:text="I live in..."
+            android:onClick="buttonTapped"
             android:id="@+id/ilovein" />
     </GridLayout>
 </RelativeLayout>

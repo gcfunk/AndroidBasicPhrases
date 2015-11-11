@@ -4,8 +4,15 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.util.Log;
 
 public class MainActivity extends ActionBarActivity {
+
+    public void buttonTapped(View view) {
+        String ourId = view.getResources().getResourceEntryName(view.getId());
+        Log.i("button id", ourId);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
